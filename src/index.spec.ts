@@ -9,7 +9,7 @@ function delay(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function errorHandler(err, req, res, next) {
+function errorHandler(err, _req, res, _next) {
   res
     .status(500)
     .send(err.message + ' - this part was added by the error handler');
