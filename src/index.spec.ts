@@ -17,7 +17,7 @@ function errorHandler(err, _req, res, _next) {
 
 app.get(
   '/pass',
-  asyncMiddleware(async (_req, res, _next) => {
+  asyncMiddleware(async (req, res, _next) => {
     await delay(0);
     res.send('this passed');
   })
